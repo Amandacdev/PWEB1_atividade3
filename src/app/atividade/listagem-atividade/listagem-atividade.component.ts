@@ -1,5 +1,5 @@
 import {Component, OnInit} from '@angular/core';
-import {Atividade} from "../../../shared/model/atividade";
+//import {Atividade} from "../../../shared/model/atividade";
 
 @Component({
   selector: 'app-listagem-atividade',
@@ -14,9 +14,10 @@ export class ListagemAtividadeComponent implements OnInit {
     {titulo:'Preparar aula de revisão',descricao:'Atividade de matemática', prazo:'12/10/2023'}
   ];
 
+
     constructor() {
-      this.atividade = new Atividade('','','');
-      this.atividades = new Array<Atividade>();
+      //this.atividade = new Atividade('','','');
+      //this.atividades = new Array<Atividade>();
     }
 
   ngOnInit() {
