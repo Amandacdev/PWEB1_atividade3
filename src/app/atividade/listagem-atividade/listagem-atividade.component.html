@@ -1,3 +1,11 @@
-<ul>
-  <li *ngFor="let atividade of atividades">oi {{atividade.titulo}}</li>
-</ul>
+<mat-card class="example-card" *ngFor="let atividade of atividades">
+  <mat-card-header>
+    <mat-card-title>{{atividade.titulo}}</mat-card-title>
+    <mat-card-subtitle>{{atividade.descricao}}</mat-card-subtitle>
+  </mat-card-header>
+  <mat-card-content>
+    <p>
+      A atividade {{atividade.titulo}}, tem até {{atividade.prazo}}, para ser realizada.
+    </p>
+  </mat-card-content>
+</mat-card>
