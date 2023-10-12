@@ -6,6 +6,13 @@ import {MatCardModule} from "@angular/material/card";
 import {MatFormFieldModule} from "@angular/material/form-field";
 import { ListagemAtividadeComponent } from './listagem-atividade/listagem-atividade.component';
 import {BrowserAnimationsModule} from "@angular/platform-browser/animations";
+import {MatInputModule} from "@angular/material/input";
+
+import {MatButtonModule} from '@angular/material/button';
+import {MatBadgeModule} from '@angular/material/badge';
+import {MatIconModule} from '@angular/material/icon';
+import {MatDividerModule} from '@angular/material/divider';
+
 
 @NgModule({
   declarations: [CadastroAtividadeComponent, ListagemAtividadeComponent],
@@ -13,12 +20,17 @@ import {BrowserAnimationsModule} from "@angular/platform-browser/animations";
     CadastroAtividadeComponent,
     ListagemAtividadeComponent
   ],
-  imports: [
-    BrowserAnimationsModule,
-    CommonModule,
-    FormsModule,
-    MatCardModule,
-    MatFormFieldModule
-  ]
+    imports: [
+        BrowserAnimationsModule,
+        CommonModule,
+        FormsModule,
+        MatCardModule,
+        MatFormFieldModule,
+        MatInputModule,
+      MatButtonModule,
+      MatBadgeModule,
+      MatIconModule,
+      MatDividerModule
+    ]
 })
 export class AtividadeModule { }

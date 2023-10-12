@@ -1,5 +1,6 @@
 import { Component, OnInit } from '@angular/core';
-import {Atividade} from "../../../shared/model/atividade";
+import {Atividade} from "../../shared/model/atividade";
+import {ATIVIDADES} from "../../shared/model/ATIVIDADES";
 
 @Component({
   selector: 'app-cadastro-atividade',
@@ -8,17 +9,19 @@ import {Atividade} from "../../../shared/model/atividade";
 })
 export class CadastroAtividadeComponent {
 
+  //atividades: Array<Atividade>;
+  atividades: Atividade[] = ATIVIDADES;
   atividade: Atividade;
-  atividades: Array<Atividade>;
   aluno = 'Amanda';
 
   constructor() {
     this.atividade = new Atividade('','','');
-    this.atividades = new Array<Atividade>();
+    //this.atividades = new Array<Atividade>();
   }
 
   inserirAtividade(): void {
     this.atividades.push(this.atividade);
-    this.atividade = new Atividade("","","");//dessa forma, crio um novo objeto na memória ram
+    this.atividade = new Atividade("","","");
   }
+
 }

@@ -1,4 +1,3 @@
-<p> {{atividades}}</p>
 <mat-card class="example-card" *ngFor="let atividade of atividades">
   <mat-card-header>
     <mat-card-title>{{atividade.titulo}}</mat-card-title>
@@ -6,7 +5,14 @@
   </mat-card-header>
   <mat-card-content>
     <p>
-      A atividade {{atividade.titulo}}, tem até {{atividade.prazo}}, para ser realizada.
+      A atividade "{{atividade.titulo}}" tem até {{atividade.prazo}} para ser realizada.
     </p>
   </mat-card-content>
+  <mat-card-actions>
+    <input placeholder="Escreva o novo título"><br>
+    <input  placeholder="Escreva a nova descrição"><br>
+    <input placeholder="Escreva o novo prazo"><br>
+    <button  mat-raised-button color="warn" (click)="editar(atividade)">Editar</button>
+    <button  mat-raised-button color="basic" (click)="remover(atividade)">Deletar</button>
+  </mat-card-actions>
 </mat-card>

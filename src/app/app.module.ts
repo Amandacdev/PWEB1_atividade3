@@ -14,6 +14,8 @@ import {MatCardModule} from '@angular/material/card';
 import {MatBadgeModule} from '@angular/material/badge';
 import {AtividadeModule} from "./atividade/atividade.module";
 
+import{AppRoutingModule} from "./app-routing.module";
+
 @NgModule({
   declarations: [
     AppComponent
@@ -29,7 +31,8 @@ import {AtividadeModule} from "./atividade/atividade.module";
     MatIconModule,
     MatCardModule,
     MatBadgeModule,
-    AtividadeModule
+    AtividadeModule,
+    AppRoutingModule
   ],
   providers: [],
   bootstrap: [AppComponent]

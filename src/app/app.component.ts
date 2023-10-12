@@ -1,5 +1,5 @@
 import {Component, OnInit} from '@angular/core';
-import {Atividade} from '../shared/model/atividade';
+import {Atividade} from "./shared/model/atividade";
 
 @Component({
   selector: 'app-root',
@@ -11,6 +11,4 @@ export class AppComponent {
 
   constructor() {
   }
-
-
 }
