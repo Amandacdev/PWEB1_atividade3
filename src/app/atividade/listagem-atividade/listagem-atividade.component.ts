@@ -30,9 +30,8 @@ export class ListagemAtividadeComponent {
       this.atividades[indxAtiviAEditar].titulo = this.novoTitulo;
       this.atividades[indxAtiviAEditar].descricao = this.novaDescricao;
       this.atividades[indxAtiviAEditar].prazo = this.novoPrazo;
+
     }
    }
-
-
 }
 

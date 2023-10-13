@@ -13,7 +13,7 @@ import {MatCardModule} from '@angular/material/card';
 
 import {MatBadgeModule} from '@angular/material/badge';
 import {AtividadeModule} from "./atividade/atividade.module";
-
+import {MatChipsModule} from '@angular/material/chips';
 import{AppRoutingModule} from "./app-routing.module";
 
 @NgModule({
@@ -32,7 +32,8 @@ import{AppRoutingModule} from "./app-routing.module";
     MatCardModule,
     MatBadgeModule,
     AtividadeModule,
-    AppRoutingModule
+    AppRoutingModule,
+    MatChipsModule
   ],
   providers: [],
   bootstrap: [AppComponent]

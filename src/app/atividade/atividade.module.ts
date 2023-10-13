@@ -12,6 +12,7 @@ import {MatButtonModule} from '@angular/material/button';
 import {MatBadgeModule} from '@angular/material/badge';
 import {MatIconModule} from '@angular/material/icon';
 import {MatDividerModule} from '@angular/material/divider';
+import {MatChipsModule} from "@angular/material/chips";
 
 
 @NgModule({
@@ -27,10 +28,11 @@ import {MatDividerModule} from '@angular/material/divider';
         MatCardModule,
         MatFormFieldModule,
         MatInputModule,
-      MatButtonModule,
-      MatBadgeModule,
-      MatIconModule,
-      MatDividerModule
+        MatButtonModule,
+        MatBadgeModule,
+        MatIconModule,
+        MatDividerModule,
+        MatChipsModule
     ]
 })
 export class AtividadeModule { }
