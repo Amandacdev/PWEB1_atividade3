@@ -3,16 +3,15 @@
 }
 
 mat-card {
-  display: inline-flex;
   justify-content: center;
   align-items: center;
   border-radius: 20px;
   background-color: rgba(10, 1, 9, 0.84);
   color: whitesmoke;
   font-size: 18px;
+  width:85%;
   padding: 40px;
-  margin:40px;
-  width:70%;
+  margin:20px;
 }
 
 mat-card-subtitle{
@@ -28,6 +27,6 @@ mat-card-content{
 }
 
 button{
-  margin: 20px;
-  left: 45%;
+  width: 300px;
+  align-content: center;
 }

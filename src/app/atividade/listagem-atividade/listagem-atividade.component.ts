@@ -11,6 +11,10 @@ import {Atividade} from "../../shared/model/atividade";
 export class ListagemAtividadeComponent {
   atividades: Atividade[] = ATIVIDADES;
 
+  novoTitulo: string = '';
+  novaDescricao: string = '';
+  novoPrazo: string = '';
+
    remover(tituloAtividadeARemover: Atividade):void{
      const indxAtiviARemover: number = this.atividades.findIndex(Atividade=> Atividade.titulo === tituloAtividadeARemover.titulo);
 
@@ -23,9 +27,9 @@ export class ListagemAtividadeComponent {
     const indxAtiviAEditar: number = this.atividades.findIndex(Atividade=> Atividade.titulo === tituloAtividadeAEditar.titulo);
 
     if(indxAtiviAEditar >= 0){
-      this.atividades[indxAtiviAEditar].titulo = "";
-      this.atividades[indxAtiviAEditar].descricao =  "";
-      this.atividades[indxAtiviAEditar].prazo = "";
+      this.atividades[indxAtiviAEditar].titulo = this.novoTitulo;
+      this.atividades[indxAtiviAEditar].descricao = this.novaDescricao;
+      this.atividades[indxAtiviAEditar].prazo = this.novoPrazo;
     }
    }
 
