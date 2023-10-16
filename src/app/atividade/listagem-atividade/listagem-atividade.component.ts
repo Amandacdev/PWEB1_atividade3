@@ -10,6 +10,7 @@ import {Atividade} from "../../shared/model/atividade";
 
 export class ListagemAtividadeComponent {
   atividades: Atividade[] = ATIVIDADES;
+  atividade: Atividade = new Atividade('','','');
 
   novoTitulo: string = '';
   novaDescricao: string = '';
@@ -30,8 +31,8 @@ export class ListagemAtividadeComponent {
       this.atividades[indxAtiviAEditar].titulo = this.novoTitulo;
       this.atividades[indxAtiviAEditar].descricao = this.novaDescricao;
       this.atividades[indxAtiviAEditar].prazo = this.novoPrazo;
-
     }
+
    }
 }
 

@@ -9,7 +9,6 @@ import {ATIVIDADES} from "../../shared/model/ATIVIDADES";
 })
 export class CadastroAtividadeComponent {
 
-  //atividades: Array<Atividade>;
   atividades: Atividade[] = ATIVIDADES;
   atividade: Atividade;
   aluno = 'Amanda';

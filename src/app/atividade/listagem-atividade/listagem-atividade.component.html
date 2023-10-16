@@ -9,9 +9,10 @@
     </p>
   </mat-card-content>
   <mat-card-actions>
-    <input placeholder="Escreva o novo título" [(ngModel)] = "novoTitulo"><br>
-    <input  placeholder="Escreva a nova descrição" [(ngModel)] = "novaDescricao"><br>
-    <input placeholder="Escreva o novo prazo" [(ngModel)] = "novoPrazo"><br>
+
+    <input placeholder="Escreva o novo título" [(ngModel)]="novoTitulo"><br>
+    <input  placeholder="Escreva a nova descrição" [(ngModel)]="novaDescricao"><br>
+    <input placeholder="Escreva o novo prazo"  [(ngModel)]="novoPrazo"><br>
     <button  mat-raised-button color="warn" (click)="editar(atividade)">Editar</button>
     <button  mat-raised-button color="basic" (click)="remover(atividade)">Deletar</button>
   </mat-card-actions>
